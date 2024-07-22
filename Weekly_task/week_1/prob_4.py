@@ -3,24 +3,37 @@ where n is provided by the user character of n number is given by the user.
 """
 
 
-def generate_words(letters):
-    results = ['']
+# Python keywords to check against
+python_keywords = [
+    "False", "None", "True", "and", "as", "assert", "async", "await", "break",
+    "class", "continue", "def", "del", "elif", "else", "except", "finally",
+    "for", "from", "global", "if", "import", "in", "is", "lambda", "nonlocal",
+    "not", "or", "pass", "raise", "return", "try", "while", "with", "yield"
+]
 
-    for letter in letters:
-        new_results = []
-        for word in results:
-            for i in range(len(word) + 1):
-                new_word = word[:i] + letter + word[i:]
-                if new_word not in new_results:
-                    new_results.append(new_word)
-        results = new_results
+allcharactor = input("Enter your string value, we will find all the valid identifiers in it \n Enter Here: ")
 
-    return results
+def generate_identifiers(word, length):
+    if length == 0:
+        check = True
+        for i in word:
+            if not (i == '_' or 'A' <= i <= 'Z' or 'a' <= i <= 'z'):
+                check = False
+                break
+        index = 0
+        for i in word:
+            if index >= 1:
+                if not (i == '_' or 'A' <= i <= 'Z' or 'a' <= i <= 'z' or '0' <= i <= '9'):
+                    check = False
+                    break
+            index += 1
+        if word in python_keywords:
+            check = False
+        if check == True:
+            print(word, end=" , ")
+    else:
+        for i in allcharactor:
+            generate_identifiers(word + i, length - 1)
 
-
-# Example usage
-letters = 'abc'
-words = generate_words(letters)
-print(words)
-
-        
+length = int(input("Enter the length of identifier you want: "))
+generate_identifiers('', length)
