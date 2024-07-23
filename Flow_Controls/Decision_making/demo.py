@@ -1,8 +1,6 @@
-#if there is a condition in the program, then decsion making is used for the flow control of the program
+age = int(input("Enter your age "))
 
-#if_else
-if(condition):
-    statement
+if age >= 18:
+    print("You can vote")
 else:
-    condition
-
+    print("You can't vote")
