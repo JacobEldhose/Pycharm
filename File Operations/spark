@@ -1,0 +1,5 @@
+Apache Spark has its architectural foundation in the resilient distributed dataset (RDD), a read-only multiset of data
+items distributed over a cluster of machines, that is maintained in a fault-tolerant way.[2] The Dataframe API was
+released as an abstraction on top of the RDD, followed by the Dataset API. In Spark 1.x, the RDD was the primary
+application programming interface (API), but as of Spark 2.x use of the Dataset API is encouraged[3] even though the
+RDD API is not deprecated.[4][5] The RDD technology still underlies the Dataset API.

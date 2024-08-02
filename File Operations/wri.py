@@ -1,0 +1,6 @@
+f = open('w_d', 'w')
+f.write('luminar\n')
+f.write('Bigdata\n')
+f.write('ML\n')
+f.write('AI\n')
+f.write('Data Science\n')
