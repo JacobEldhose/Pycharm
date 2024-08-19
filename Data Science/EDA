@@ -1,0 +1,32 @@
+EDA
+#.......................................................................................................................
+To manage the datas which is used for teaching the machines is called EDA
+Eda tools are used for data management
+
+
+pandas
+#.......................................................................................................................
+
+Data manipulation
+#................
+
+        1) Data analysis
+
+        2) Data cleaning
+
+                a) To handle missing values
+
+                b) To remove duplicate values
+
+                c) To collect useful data
+
+                d) To remove wrong data
+
+
+Matplotlib
+#.......................................................................................................................
+
+Data visualization
+
+        Graph- line,point, bar chart, pie chart, histogram, scatter plot, boxplot
+
