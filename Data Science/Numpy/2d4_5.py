@@ -1,0 +1,23 @@
+import numpy as np
+a = np.array([[1,2,3,4,5],[6,7,8,9,0],[1,2,3,4,5],[6,7,8,9,0]])
+print(a)
+print(a.shape)
+print('-'*100)
+b = a.reshape([5,4])
+print(b)
+print(b.shape)
+print('-'*100)
+
+b = a.reshape([2,10])
+print(b)
+print(b.shape)
+print('-'*100)
+
+b = a.reshape([1,5,4])
+print(b)
+print(b.shape)
+print('-'*100)
+b = a.reshape([20])
+print(b)
+print(b.shape)
+print('-'*100)
