@@ -2,7 +2,8 @@ string = 'luminartechnolab'
 vowels = 'aeiouAEIOU'
 vowl = []
 for i in string:
-    if i in vowels:
+    for j in i:
+        if i in vowels:
         vowl.append(i)
 
 print(vowl)

@@ -16,5 +16,17 @@ print(df.isna().sum())
 # dropna to remove the row with missing values
 
 
-df.dropna(subset='Calories', inplace=True,ignore_index=True)
+# df.dropna(subset='Calories', inplace=True,ignore_index=True)
+# print(df)
+
+# How to handle wrong Data
+
+# Wrong Data = Values without any connection with thew other data
+
+# df.loc[7,'Duration'] = 45
+# print(df)
+x = df['Calories'].mean()
+for i in df.index:
+    if df.loc[i,'Calories']>400:
+        df.loc[i,'Calories'] = x
 print(df)

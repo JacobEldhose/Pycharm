@@ -1,6 +1,6 @@
-current = input("""Enter the from currency (eg: USD, INR, EUR): """).upper()
+current = input("""Enter the from currency (eg: USD, INR, EUR,etc.): """).upper()
 cu_cur = int(input("Enter the amount"))
-conv = input("Enter the to currency (eg: USD, IRN, EUR): ").upper()
+conv = input("Enter the to currency (eg: USD, IRN, EUR,etc.): ").upper()
 dic = {}
 f = open('currency rates', 'r')
 
