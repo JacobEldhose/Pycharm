@@ -1,0 +1,15 @@
+
+
+1. Split County & City column to Country column and city column
+
+2. Split State column into state , state code, type
+
+3. Convert state code and type into single column with "&" seperator
+   (ex: CA & City)
+
+4. Create new column that conatins state code and county 
+   (ex: CA - orange County)
+
+5. Seperate time zone & population column into timezone and population
+
+6. Seperate Area code into two columns
